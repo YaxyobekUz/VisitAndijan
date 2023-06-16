@@ -205,3 +205,114 @@ p{
     animation:bringDown 0.2s ease ;
     box-shadow:0 2px 4px 0 #00000037;
 }
+
+/* header  */
+.header {
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow:0 2px 2px 0 #00000037;
+}
+.header-parent,.header-parent-second-child,.header-list{
+    display: flex;
+    align-items: center;
+}
+.header-parent {
+    justify-content: space-between;
+}
+.logo-img{
+    width: 160px;
+}
+.header-list-child:not(:last-child) {
+    margin-right: 20px;
+}
+.header-list-child:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+.header-list-child{
+    position: relative;
+}
+
+/* travel list  */
+.travel-list {
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: var(--white);
+    box-shadow:0 2px 4px 0 #00000037;
+}
+.travel-list-child:not(:last-child){
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+.travel-list-btn{
+    background: transparent;
+}
+.travel-list-child a,.travel-list-btn{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.travel-list-child a:hover{
+    color: var(--pale-cerulean);
+}
+.travel-list-btn span{
+    margin-right: 10px;
+}
+.travel-list-child img{
+    width: 20px;
+    height: 20px;
+}
+
+/* night mode  */
+.night-mode-btn {
+}
+.night-mode-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    background: var(--paley-blue);
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 40px;
+}
+@keyframes moonRotate {
+    0%{
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+.header-moon-icon {
+    display: var(--display-block);
+    animation:moonRotate 0.5s 1;
+}
+@keyframes sunRotate {
+    0%{
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+}
+.header-sun-icon {
+    display: var(--display-none);
+    animation:sunRotate 0.5s 1;
+}
+.night-mode-btn-first-text {
+    display: var(--display-block);
+
+}
+.night-mode-btn-second-text {
+    display: var(--display-none);
+}
