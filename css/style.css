@@ -285,6 +285,7 @@ p {
 
 .logo-img {
     width: 160px;
+    height: 47px;
 }
 
 .header-list-child:not(:last-child) {
@@ -350,6 +351,11 @@ p {
     border-radius: 8px;
     padding: 10px;
     margin-left: 40px;
+}
+.header-moon-icon ,
+.header-sun-icon{
+    width: 24px;
+    height: 24px;
 }
 
 @keyframes moonRotate {
