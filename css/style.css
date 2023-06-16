@@ -2,7 +2,13 @@
     --midnight-blue:#27374D;
     --steel-blue:#526D82;
     --pale-cerulean:#9DB2BF;
-    --light-steel-blue:#DDE6ED;
+    --blue-gray:#bfd2e0;
+    --light-steel-blue:#ebf0f3;
+    --paley-blue:#DDE6ED;
+    --white:#fff;
+    /* for night mode btn  */
+    --display-none:none;
+    --display-block:block;
 }
 *{
     margin: 0;
@@ -11,6 +17,7 @@
 }
 a{
     text-decoration: none;
+    color: var(--steel-blue);
 }
 ul{
     list-style: none;
@@ -18,6 +25,9 @@ ul{
 button{
     border: none;
     background: none;
+    color: var(--steel-blue);
+    font-size: 16px;
+    font-family: 'Geologica', 'sans-serif';
 }
 h2{
     font-size: 32px;
@@ -32,8 +42,9 @@ p{
     line-height: 21px;
 }
 .body {
-    color: var(--midnight-blue);
+    color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
+    height: 10000px;
 }
 .container {
     max-width: 1280px;
@@ -43,11 +54,14 @@ p{
     margin-right: auto;
     margin-left: auto;
 }
+.display-none{
+    display: none;
+}
 
 /* top  */
 .top {
     width: 100%;
-    padding: 16px 0;
+    padding: 8px 0;
     background: var(--light-steel-blue);
 }
 .top-parent {
@@ -96,8 +110,8 @@ p{
 }
 .social-networks a {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
@@ -114,6 +128,7 @@ p{
     display: flex;
     justify-content: stretch;
     position: relative;
+    z-index: 2;
 }
 .lang-list-child {
     display: flex;
@@ -121,7 +136,7 @@ p{
     align-items: center;
     padding: 10px;
     border-radius: 4px;
-    background: #9DB2BF;
+    background: var(--paley-blue);
     z-index: 1;
 }
 .lang-list-child img:nth-child(1){
@@ -131,7 +146,6 @@ p{
     width: 14px !important;
     height: 14px;
     transform: rotate(180deg);
-    margin-left: 4px;
 }
 .lang-list-child img {
     width: 30px;
@@ -141,15 +155,15 @@ p{
     display: flex;
     align-items: center;
     color: var(--steel-blue);
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .lang-list-last-child{
     position: absolute;
     z-index: 0;
     top: 0;
 }
-.lang-btn{
-    font-weight: 700;
+.lang-btn span{
+    margin-right: 4px;
 }
 @keyframes arrowRotate180deg {
     0%{
@@ -189,4 +203,5 @@ p{
     opacity: 1;
     top: 42px;
     animation:bringDown 0.2s ease ;
+    box-shadow:0 2px 4px 0 #00000037;
 }
