@@ -41,6 +41,7 @@ h2 {
     color: #27374D;
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -85,7 +86,12 @@ section{
     margin-right: auto;
     margin-left: auto;
 }
-
+.left-0{
+    left: 0;
+}
+.right-0{
+    right: 0;
+}
 .display-none {
     display: none;
 }
@@ -517,7 +523,6 @@ section{
 }
 .about-section-title {
     list-style: 5px;
-    margin-bottom: 20px;
 }
 .about-section-parent p{
     max-width: 800px;
@@ -527,27 +532,9 @@ section{
 
 }
 .about-section-parent a{
-    background: var(--paley-blue);
+    background:transparent;
     padding: 8px 28px;
     border-radius: 8px;
-}
-
-/* visit section  */
-.visit-section {
-}
-.container {
-}
-.visit-section-top-wrapper {
-}
-.visit-section-title {
-}
-.visit-section-travel-list {
-}
-.visit-section-travel-list-child {
-}
-.visit-section-travel-list-background-text {
-}
-.travel-list-images-wrapper {
-}
-.travel-list-child-texts-parent {
+    color: #2a4f6c;
+    border: 2px solid #2a4f6c;
 }
