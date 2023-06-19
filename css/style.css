@@ -38,6 +38,7 @@ button {
 }
 
 h2 {
+    color: #27374D;
     font-size: 32px;
     line-height: 38px;
 }
@@ -51,7 +52,9 @@ p {
     font-size: 18px;
     line-height: 21px;
 }
-
+section{
+    padding: 90px 0;
+}
 .body {
     color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
@@ -89,27 +92,27 @@ p {
 
 
 /* top  */
-.top {
+.top-cta {
     width: 100%;
-    padding: 8px 0;
+    padding: 18px 0;
     background: #f1f5f8;
     font-size: 14px;
 }
 
-.top-parent {
+.top-cta-parent {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: var(--steel-blue);
 }
 
-.top-email-link,
+.top-cta-email-link,
 .phone-numbers-parent a {
     color: var(--steel-blue);
     font-weight: 500;
 }
 
-.top-email-link:hover {
+.top-cta-email-link:hover {
     text-decoration: underline;
 }
 
@@ -499,6 +502,5 @@ p {
     margin-bottom: 90px;
     background: var(--white);
     padding: 10px 0;
-    /* animation:headerScrollEffect 0.8s 1; */
     transition: all 0.4s ease;
 }
