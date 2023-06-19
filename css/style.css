@@ -504,3 +504,30 @@ section{
     padding: 10px 0;
     transition: all 0.4s ease;
 }
+
+/* about section  */
+.about-section {
+    padding: 90px 0;
+}
+.about-section-parent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about-section-title {
+    list-style: 5px;
+    margin-bottom: 20px;
+}
+.about-section-parent p{
+    max-width: 800px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+.about-section-parent a{
+    background: var(--paley-blue);
+    padding: 8px 28px;
+    border-radius: 8px;
+}
