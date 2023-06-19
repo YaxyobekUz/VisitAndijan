@@ -1,4 +1,5 @@
 :root {
+    --body-color: #fff;
     --midnight-blue: #27374D;
     --steel-blue: #526D82;
     --pale-cerulean: #9DB2BF;
@@ -6,6 +7,8 @@
     --light-steel-blue: #f1f5f8;
     --paley-blue: #d3dee6;
     --white: #fff;
+    --header-white-color: #fff;
+
     /* for night mode btn  */
     --display-none: none;
     --display-block: block;
@@ -52,7 +55,23 @@ p {
 .body {
     color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
-    height: 10000px;
+    background: var(--body-color);
+    scroll-behavior: smooth;
+}
+
+.night-mode {
+    --body-color: var(--light-steel-blue);
+    --midnight-blue: #27374D;
+    --steel-blue: #fff;
+    --pale-cerulean: #9DB2BF;
+    --blue-gray: #bfd2e0;
+    --light-steel-blue: #2a4f6c;
+    --paley-blue: #526D82;
+    --white: #27374D;
+    --header-white-color: #fff;
+    /* for night mode btn  */
+    --display-none: block;
+    --display-block: none;
 }
 
 .container {
@@ -68,24 +87,12 @@ p {
     display: none;
 }
 
-.night-mode {
-    --midnight-blue: #27374D;
-    --steel-blue: #fff;
-    --pale-cerulean: #9DB2BF;
-    --blue-gray: #bfd2e0;
-    --light-steel-blue: #2a4f6c;
-    --paley-blue: #526D82;
-    --white: #27374D;
-    /* for night mode btn  */
-    --display-none: block;
-    --display-block: none;
-}
 
 /* top  */
 .top {
     width: 100%;
     padding: 8px 0;
-    background: var(--light-steel-blue);
+    background: #f1f5f8;
     font-size: 14px;
 }
 
@@ -180,13 +187,10 @@ p {
     z-index: 1;
 }
 
-.lang-list-child img:nth-child(1) {
-    margin-right: 10px;
+.lang-list-arrow-icon, .travel-list-arrow-{
+    width: 10px ;
 }
-
 .lang-list-arrow-icon {
-    width: 14px !important;
-    height: 14px;
     transform: rotate(180deg);
     color: var(--steel-blue);
 }
@@ -265,11 +269,13 @@ p {
 
 /* header  */
 .header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     padding: 20px 0;
-    background: var(--white);
-    box-shadow: 0 2px 2px 0 #00000037;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .header-parent,
@@ -288,28 +294,47 @@ p {
     height: 47px;
 }
 
+.header-list-child {
+    position: relative;
+}
+
+.header-list-child a,
+.travel-list-btn span {
+    font-size: 15px;
+}
+
 .header-list-child:not(:last-child) {
     margin-right: 20px;
 }
 
-.header-list-child:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-list-child {
-    position: relative;
-}
 
 /* travel list  */
 .travel-list {
     width: 200px;
     position: absolute;
-    top: 30px;
+    top: 28px;
     padding: 10px 16px;
     border-radius: 6px;
     background: var(--white);
     box-shadow: 0 2px 4px 0 #00000037;
+}
+
+@keyframes bringDown2 {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 28px;
+    }
+}
+
+.travel-list-child-bring-down {
+    opacity: 1;
+    top: 28px;
+    animation: bringDown2 0.2s ease;
 }
 
 .travel-list-child:not(:last-child) {
@@ -318,11 +343,12 @@ p {
 }
 
 .travel-list-btn {
+    display: flex;
+    align-items: center;
     background: transparent;
 }
 
-.travel-list-child a,
-.travel-list-btn {
+.travel-list-child a {
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
@@ -333,29 +359,25 @@ p {
 }
 
 .travel-list-btn span {
-    margin-right: 10px;
-}
-
-.travel-list-child img {
-    width: 20px;
-    height: 20px;
+    margin-right: 2px;
 }
 
 /* night mode  */
 .night-mode-btn {
     display: flex;
+    width: 118px;
     align-items: center;
     justify-content: space-between;
-    width: 144px;
     background: var(--paley-blue);
     border-radius: 8px;
-    padding: 10px;
+    padding: 8px;
     margin-left: 40px;
 }
-.header-moon-icon ,
-.header-sun-icon{
-    width: 24px;
-    height: 24px;
+
+.header-moon-icon,
+.header-sun-icon {
+    width: 17px;
+    height: 17px;
 }
 
 @keyframes moonRotate {
@@ -394,9 +416,89 @@ p {
 
 .night-mode-btn-first-text {
     display: var(--display-block);
+    font-size: 14px;
 
 }
 
 .night-mode-btn-second-text {
+    font-size: 14px;
     display: var(--display-none);
+}
+
+/* hero  */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 90px;
+    background: url(../images/jizzakh-mountains-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: brightness(0.7);
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 12px;
+}
+
+.hero-card-text {
+    max-width: 750px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    font-weight: 300;
+}
+
+.hero-card-link {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding: 10px 28px;
+    border-radius: 9px;
+    border: 1px solid white;
+}
+
+@keyframes headerScrollEffect {
+    0% {
+        background: transparent;
+        padding: 20px;
+    }
+
+    100% {
+        background: #000;
+        padding: 10px 0;
+
+    }
+
+}
+
+.with-effect {
+    box-shadow: 0 2px 2px 0 #00000037;
+    margin-bottom: 90px;
+    background: var(--white);
+    padding: 10px 0;
+    /* animation:headerScrollEffect 0.8s 1; */
+    transition: all 0.4s ease;
 }
