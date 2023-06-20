@@ -899,3 +899,59 @@ section {
 .hotel-link:hover::after{
     transform: translate(2px,-2px);
 }
+
+/* contact section */
+ .contact-section {
+    padding: 50px 0;
+    background: #f1f5f8;
+}
+.contact-section-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact-section-parent p{
+    max-width: 700px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+.contact-link{
+    font-size: 14px;
+    color: #2a4f6c;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+.contact-link:hover{
+    color: #27374D;
+}
+.contact-section-links-parent p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.contact-section-links-parent span{
+    display: flex;
+    align-items: center;
+}
+.contact-section-links-parent span a{
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #2a4f6c;
+    color: #2a4f6c;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 30px;
+}
+.contact-section-links-parent span a:not(:last-child){
+    margin-right: 10px;
+}
+.contact-section-links-parent span a img{
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+}
