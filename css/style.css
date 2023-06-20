@@ -10,13 +10,13 @@
     --white: #fff;
     --header-white-color: #fff;
     /* titles color */
-    --titles-color:#004377;
+    --titles-color: #004377;
     /* link color  */
-    --a-color:#fff;
+    --a-color: #fff;
     /* top cta  */
     --top-cta: #f1f5f8;
     /* background */
-    --background:transparent;
+    --background: transparent;
     /* for night mode btn  */
     --display-none: none;
     --display-block: block;
@@ -27,8 +27,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.a-color{
-    --a-color:#526D82;
+
+.a-color {
+    --a-color: #526D82;
 }
 
 ul {
@@ -63,19 +64,21 @@ p {
 section {
     padding: 90px 0;
 }
-.margin-0{
+
+.margin-0 {
     margin: 0 !important;
 }
+
 .body {
     color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
     background-color: var(--body-color);
     scroll-behavior: smooth;
-    transition: background-color 0.3s ease ;
+    transition: background-color 0.3s ease;
 }
 
 .night-mode {
-    --body-color:#002847;
+    --body-color: #002847;
     --midnight-blue: #27374D;
     --midnight-blue-to-white: #fff;
     --steel-blue: #fff;
@@ -86,21 +89,23 @@ section {
     --paley-blue: #526D82;
     --white: #002847;
     --header-white-color: #fff;
-    --a-color:#fff;
+    --a-color: #fff;
     /* titles color */
-    --titles-color:#0076d1;
+    --titles-color: #0076d1;
     /* top cta  */
-    --top-cta:#093150 ;
+    --top-cta: #093150;
     /* background */
-    --background:#00243fb9;
+    --background: #00243fb9;
     /* for night mode btn  */
     --display-none: block;
     --display-block: none;
 }
+
 a {
     text-decoration: none;
     color: var(--a-color);
 }
+
 .container {
     max-width: 1280px;
     width: 100%;
@@ -181,6 +186,11 @@ a {
     align-items: center;
 }
 
+.social-networks div {
+    display: flex;
+    align-items: center;
+}
+
 .social-networks a {
     display: flex;
     width: 45px;
@@ -254,10 +264,12 @@ a {
 .lang-btn span {
     margin-right: 4px;
 }
-.travel-list-arrow-icon{
+
+.travel-list-arrow-icon {
     transition: transform 0.2s ease;
     color: var(--a-color);
 }
+
 .rotate180deg {
     transform: rotate(180deg);
 }
@@ -333,17 +345,19 @@ a {
     background: var(--white);
     box-shadow: 0 2px 4px 0 #00000037;
 }
+
 @keyframes bringDown2 {
     0% {
         opacity: 0;
         top: 0;
     }
-    
+
     100% {
         opacity: 1;
         top: 28px;
     }
 }
+
 .travel-list-child-bring-down {
     opacity: 1;
     top: 28px;
@@ -437,7 +451,8 @@ a {
     font-size: 14px;
     display: var(--display-none);
 }
-.white-color{
+
+.white-color {
     color: #fff;
 }
 
@@ -544,7 +559,8 @@ a {
 
 /* images  */
 .about-section-images-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .about-section-img {
@@ -567,7 +583,7 @@ a {
     color: white;
     text-align: left;
     justify-content: start;
-    border-radius: 0 0  10px 10px;
+    border-radius: 0 0 10px 10px;
     background: var(--background);
 }
 
@@ -642,7 +658,7 @@ a {
     padding: 8px 28px;
     border-radius: 8px;
     color: var(--steel-blue);
-    border: 2px solid  var(--steel-blue);
+    border: 2px solid var(--steel-blue);
 }
 
 /* list  */
@@ -790,19 +806,23 @@ a {
     align-items: center;
     gap: 20px;
 }
-.hotel-parent div:nth-child(1){
+
+.hotel-parent div:nth-child(1) {
     display: grid;
     grid-template-columns: auto auto;
     gap: 5px;
 }
-.hotel-parent div img{
+
+.hotel-parent div img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
 }
-.hotel-parent div img:nth-child(1){
+
+.hotel-parent div img:nth-child(1) {
     grid-row: 1/3;
 }
+
 .about-hotel {
     padding: 20px;
 }
@@ -814,6 +834,7 @@ a {
     flex-wrap: wrap;
     margin-bottom: 16px;
 }
+
 .short-text-list-child {
     padding: 4px 10px;
     font-size: 11px;
@@ -821,14 +842,17 @@ a {
     background: #d3dee6;
     color: #526D82;
 }
-.short-text-list-child:not(:last-child){
+
+.short-text-list-child:not(:last-child) {
     margin-right: 10px;
 }
+
 .about-hotel h3 {
     font-size: 32px;
     margin-bottom: 20px;
     color: var(--titles-color);
 }
+
 .about-hotel p {
     line-height: 26px;
     font-size: 17px;
@@ -838,50 +862,61 @@ a {
 }
 
 /* price info  */
-.hotel-price-info{
+.hotel-price-info {
     font-size: 16px !important;
     font-weight: 600;
     color: var(--titles-color);
     margin-bottom: 10px !important;
 }
-.hotel-price-info span,.hotel-price-info sup del{
+
+.hotel-price-info span,
+.hotel-price-info sup del {
     font-size: 13px;
     color: #526D82;
     font-weight: 500;
 }
-.hotel-price-info sup del{
-    font-size: 9px ;
+
+.hotel-price-info sup del {
+    font-size: 9px;
 }
-.hotel-visitors-information{
+
+.hotel-visitors-information {
     display: flex;
     align-items: end;
     margin-bottom: 28px;
 }
-.hotel-visitors-information div:nth-child(1){
+
+.hotel-visitors-information div:nth-child(1) {
     margin-right: 70px;
 }
-.hotel-visitors-information div:nth-child(1), .hotel-visitors-information div:nth-child(2){
+
+.hotel-visitors-information div:nth-child(1),
+.hotel-visitors-information div:nth-child(2) {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.hotel-visitors-information div span:nth-child(1){
+
+.hotel-visitors-information div span:nth-child(1) {
     font-size: 36px;
     font-weight: 700;
     color: var(--titles-color);
 }
-.hotel-visitors-information div span:nth-child(2){
+
+.hotel-visitors-information div span:nth-child(2) {
     font-size: 14px;
     color: var(--titles-color);
 }
+
 .hotel-link {
     display: flex;
     align-items: center;
     font-size: 14px;
     color: var(--steel-blue);
 }
-.hotel-link::after{
+
+.hotel-link::after {
     content: '';
     width: 14px;
     height: 14px;
@@ -891,18 +926,21 @@ a {
     background-position: center center;
     transition: transform 0.3s ease;
 }
-.hotel-link:hover{
+
+.hotel-link:hover {
     text-decoration: underline;
 }
-.hotel-link:hover::after{
-    transform: translate(2px,-2px);
+
+.hotel-link:hover::after {
+    transform: translate(2px, -2px);
 }
 
 /* contact section */
- .contact-section {
+.contact-section {
     background: var(--top-cta);
     padding: 50px 0;
 }
+
 .contact-section-parent {
     display: flex;
     flex-direction: column;
@@ -910,45 +948,53 @@ a {
     justify-content: center;
     text-align: center;
 }
-.contact-section-parent p{
+
+.contact-section-parent p {
     max-width: 700px;
     font-weight: 300;
     margin-bottom: 2px;
 }
-.contact-link{
+
+.contact-link {
     font-size: 14px;
     color: var(--steel-blue);
     margin-bottom: 20px;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
-.contact-link:hover{
+
+.contact-link:hover {
     color: var(--steel-blue);
 }
+
 .contact-section-links-parent p {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 6px;
 }
-.contact-section-links-parent span{
+
+.contact-section-links-parent span {
     display: flex;
     align-items: center;
 }
-.contact-section-links-parent span a{
-    display:flex;
+
+.contact-section-links-parent span a {
+    display: flex;
     align-items: center;
     border-radius: 8px;
     background: transparent;
-    border: 1.5px solid  var(--steel-blue);
-    color:  var(--steel-blue);
+    border: 1.5px solid var(--steel-blue);
+    color: var(--steel-blue);
     font-size: 14px;
     font-weight: 500;
     padding: 8px 30px;
 }
-.contact-section-links-parent span a:not(:last-child){
+
+.contact-section-links-parent span a:not(:last-child) {
     margin-right: 10px;
 }
-.contact-section-links-parent span a img{
+
+.contact-section-links-parent span a img {
     width: 18px;
     height: 18px;
     margin-left: 6px;
@@ -958,37 +1004,46 @@ a {
 .footer {
     padding: 60px 0;
 }
+
 .footer-parent {
     display: flex;
     align-items: start;
     justify-content: space-between;
 }
+
 .footer-list-child:not(:last-child) {
     margin-bottom: 8px;
 }
-.footer-parent div h3{
+
+.footer-parent div h3 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.footer-list-child a{
+
+.footer-list-child a {
     font-size: 14px;
     font-weight: 300;
     transition: color 0.3s ease;
     color: var(--steel-blue);
 }
-.footer-list-child a:hover,.footer-link:hover{
+
+.footer-list-child a:hover,
+.footer-link:hover {
     color: var(--midnight-blue-to-white);
 }
+
 .footer-last-item {
     display: flex;
     flex-direction: column;
 }
-.footer-link{
+
+.footer-link {
     margin-top: 10px;
     transition: color 0.3s ease;
     color: var(--steel-blue);
 }
+
 .footer-bottom {
     border-top: 0.5px solid var(--midnight-blue-to-white);
     text-align: center;
@@ -997,182 +1052,407 @@ a {
 }
 
 @media only screen and (max-width:1120px) {
-    h2{
+    h2 {
         font-size: 34px;
     }
-    .about-section-parent p{
+
+    .about-section-parent p {
         font-size: 16px;
         max-width: 600px;
     }
+
     .about-section-img {
         width: 260px;
         height: 410px;
     }
-    .about-section-img:nth-child(1){
-        border-radius:30px 10px 10px 10px;
-        
+
+    .about-section-img:nth-child(1) {
+        border-radius: 30px 10px 10px 10px;
+
     }
-    .about-section-img:nth-child(1) div{
-        border-radius: 0 0 10px 10px;  
+
+    .about-section-img:nth-child(1) div {
+        border-radius: 0 0 10px 10px;
     }
-    .about-section-img:nth-child(3) div{
+
+    .about-section-img:nth-child(3) div {
         border-radius: 0 0 30px 10px;
     }
+
     .about-section-img div {
         padding: 6px;
     }
-    .about-section-img:nth-child(3){
-        border-radius: 10px 10px 30px 10px ;
+
+    .about-section-img:nth-child(3) {
+        border-radius: 10px 10px 30px 10px;
     }
-    .about-section-img div h3{
+
+    .about-section-img div h3 {
         font-size: 14px;
     }
-    .about-section-img div p{
+
+    .about-section-img div p {
         font-size: 12px;
         line-height: normal;
     }
-    .visit-section-top-wrapper div p,.travel-list-child-texts-parent p,.about-hotel p,.contact-section-parent p,.photo-gallery-parent p{
+
+    .visit-section-top-wrapper div p,
+    .travel-list-child-texts-parent p,
+    .about-hotel p,
+    .contact-section-parent p,
+    .photo-gallery-parent p {
         font-size: 16px;
         line-height: normal;
     }
-    .travel-list-child-texts-parent{
+
+    .travel-list-child-texts-parent {
         max-width: 650px;
     }
+
+    /* Photo gallery  */
+    .photos-list {
+        grid-template-columns: auto auto auto;
+    }
 }
+
 @media only screen and (max-width:1090px) {
-    .travel-list-child-texts-parent{
+    .travel-list-child-texts-parent {
         max-width: 500px;
     }
-    .travel-list-child-texts-parent h3{
+
+    .travel-list-child-texts-parent h3 {
         line-height: normal;
         font-size: 28px;
     }
-    .travel-list-child-texts-parent a{
+
+    .travel-list-child-texts-parent a {
         padding: 10px 40px;
         font-size: 14px;
     }
-    .visit-section-top-wrapper a{
+
+    .visit-section-top-wrapper a {
         font-size: 14px;
         border-width: 1.5px;
     }
-    .about-hotel p{
+
+    .visit-section-top-wrapper p {
+        max-width: 500px !important;
+    }
+
+    .about-hotel p {
         max-width: 400px;
     }
 }
-@media only screen and (max-width:900px){
-    h2{
+
+@media only screen and (max-width:910px) {
+    h2 {
         font-size: 30px;
     }
-    section{
+
+    section {
         padding: 70px 0 !important;
     }
-    .logo-img{
+
+    .logo-img {
         width: 140px;
         height: 40px;
     }
-    .header-list-child a{
+
+    .header-list-child a {
         font-size: 13px;
     }
-    .travel-list-btn span{
+
+    .travel-list-btn span {
         font-size: 13px;
     }
-    .night-mode-btn-first-text,.night-mode-btn-second-text{
+
+    .night-mode-btn-first-text,
+    .night-mode-btn-second-text {
         font-size: 11px;
     }
-    .night-mode-btn{
+
+    .night-mode-btn {
         width: 105px;
         margin-left: 35px;
         padding: 7px;
     }
-    .hero-parent h1{
+
+    .hero-parent h1 {
         font-size: 42px;
     }
+
     .hero-parent p {
         font-size: 16px;
         max-width: 600px;
         margin-bottom: 20px;
     }
-    .hero-parent a{
+
+    .hero-parent a {
         font-size: 14px;
         padding: 8px 22px;
     }
-    .top-cta-email-link,.phone-numbers-parent a,.phone-numbers-parent span,.social-networks {
-        font-size: 11px;
+
+    .top-cta-email-link,
+    .phone-numbers-parent a,
+    .phone-numbers-parent span,
+    .social-networks {
+        font-size: 13px;
     }
-    .social-networks a{
+
+    .social-networks a {
         width: 35px;
         height: 35px;
     }
-    .social-network-icon{
+
+    .social-network-icon {
         width: 17px;
         height: 17px;
     }
-    .visit-section-top-wrapper div p,.travel-list-child-texts-parent p,.about-hotel p,.contact-section-parent p,.photo-gallery-parent p{
-        font-size: 14px;
+
+    .visit-section-top-wrapper div p,
+    .travel-list-child-texts-parent p,
+    .about-hotel p,
+    .contact-section-parent p,
+    .photo-gallery-parent p {
         max-width: 520px;
     }
 }
-@media only screen and (max-width:820px) {
-    .about-section-img:nth-child(2){
-        display: none;
+
+@media only screen and (max-width:860px) {
+    .about-section-images-wrapper {
+        max-width: 100%;
+        overflow: scroll;
+    }
+
+    .about-section-img:nth-child(1),
+    .about-section-img:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .travel-list-child-texts-parent {
+        padding: 16px;
+        width: 400px;
+    }
+
+    .texts-parent-first-text {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .travel-list-child-texts-parent h3 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .travel-list-child-texts-parent p {
+        font-size: 13px;
+        margin-bottom: 22px;
     }
 }
-@media only screen and (max-width:730px){
-    .header-list-child:not(:last-child){
+
+@media only screen and (max-width:830px) {
+
+    /* photo gallery  */
+    .photos-list {
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    h2 {
+        font-size: 29px;
+    }
+
+    /* about section  */
+    .about-section-parent p {
+        font-size: 15px;
+        max-width: 500px;
+    }
+
+    /* visit section  */
+    .visit-section-top-wrapper div p {
+        max-width: 350px !important;
+    }
+
+    .visit-section-top-wrapper a {
+        padding: 7px 24px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 60px 0 !important;
+    }
+
+    .header-list-child:not(:last-child) {
         margin-right: 10px;
     }
-    .travel-list{
+
+    .travel-list {
         width: 150px;
     }
-    .travel-list-child:not(:last-child){
+
+    .travel-list-child:not(:last-child) {
         margin-bottom: 4px;
     }
-    .night-mode-btn{
+
+    .night-mode-btn {
         margin-left: 10px;
     }
-    .hero-parent h1{
+
+    .hero-parent h1 {
         font-size: 31px;
         margin-bottom: 8px;
     }
-    .hero-parent p{
+
+    .hero-parent p {
         max-width: 550px;
         font-size: 14px;
         margin-bottom: 16px;
     }
-    .hero-parent a{
+
+    .hero-parent a {
         font-size: 12px;
     }
+
+    .phone-numbers-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone-numbers-parent span svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+    }
+
+    .social-networks span {
+        margin-bottom: 2px;
+    }
+
+    .social-networks {
+        flex-direction: column;
+
+    }
+
+    .social-networks a:not(:first-child) {
+        margin-left: 2px;
+    }
+
+    /* visit section  */
+    .visit-section-travel-list-child {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        background: var(--light-steel-blue);
+    }
+
+    .visit-section-travel-list-child img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .travel-list-child-texts-parent {
+        min-width: 100%;
+        position: static;
+        padding: 0px;
+    }
+
+    .travel-list-child-texts-parent p {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* photo gallery  */
+    .photos-list {
+        gap: 10px;
+    }
 }
-@media only screen and (max-width:630px){
-    .header-parent-second-child{
+
+@media only screen and (max-width:630px) {
+    section{
+        padding: 50px 0 !important;
+    }
+    .header-parent-second-child {
         display: none;
     }
-    .hero-parent h1{
+
+    .hero-parent h1 {
         font-size: 26px;
         margin-bottom: 6px;
     }
-    .hero-parent p{
+
+    .hero-parent p {
         max-width: 450px;
         font-size: 12px;
         margin-bottom: 12px;
     }
-    .hero-parent a{
+
+    .hero-parent a {
         font-size: 11px;
         padding: 6px 16px;
         border-width: 0.8px;
     }
+    .top-cta-parent {
+        justify-content: space-between;
+    }
+    /* about section  */
+    .about-section-parent p{
+        margin-bottom: 30px;
+    }
+    /* visit section  */
+    .visit-section-top-wrapper {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .visit-section-top-wrapper div p {
+        max-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    /* photo gallery  */
+    .photo-gallery-parent p,.visit-section-top-wrapper{
+        margin-bottom: 30px;
+    }
+    .photos-list {
+        gap: 5px;
+    }
 }
-@media only screen and (max-width:630px){
-    .hero-parent h1{
+
+@media only screen and (max-width:500px) {
+    /* visit section  */
+    .travel-list-child-texts-parent a{
+        padding: 9px 32px;
+        border-radius: 6px;
+    }
+    /* photo gallery  */
+    .photos-list {
+        grid-template-columns: auto;
+        gap: 6px;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .hero-parent h1 {
         font-size: 22px;
         margin-bottom: 5px;
     }
-    .hero-parent p{
+
+    .hero-parent p {
         max-width: 390px;
         font-size: 10px;
         margin-bottom: 9px;
     }
-    .hero-parent a{
+
+    .hero-parent a {
         font-size: 9px;
         border-width: 0.5px;
         border-radius: 6px;
