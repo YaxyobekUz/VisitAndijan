@@ -995,3 +995,186 @@ a {
     padding: 10px 0;
     color: var(--midnight-blue-to-white);
 }
+
+@media only screen and (max-width:1120px) {
+    h2{
+        font-size: 34px;
+    }
+    .about-section-parent p{
+        font-size: 16px;
+        max-width: 600px;
+    }
+    .about-section-img {
+        width: 260px;
+        height: 410px;
+    }
+    .about-section-img:nth-child(1){
+        border-radius:30px 10px 10px 10px;
+        
+    }
+    .about-section-img:nth-child(1) div{
+        border-radius: 0 0 10px 10px;  
+    }
+    .about-section-img:nth-child(3) div{
+        border-radius: 0 0 30px 10px;
+    }
+    .about-section-img div {
+        padding: 6px;
+    }
+    .about-section-img:nth-child(3){
+        border-radius: 10px 10px 30px 10px ;
+    }
+    .about-section-img div h3{
+        font-size: 14px;
+    }
+    .about-section-img div p{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .visit-section-top-wrapper div p,.travel-list-child-texts-parent p,.about-hotel p,.contact-section-parent p,.photo-gallery-parent p{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .travel-list-child-texts-parent{
+        max-width: 650px;
+    }
+}
+@media only screen and (max-width:1090px) {
+    .travel-list-child-texts-parent{
+        max-width: 500px;
+    }
+    .travel-list-child-texts-parent h3{
+        line-height: normal;
+        font-size: 28px;
+    }
+    .travel-list-child-texts-parent a{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    .visit-section-top-wrapper a{
+        font-size: 14px;
+        border-width: 1.5px;
+    }
+    .about-hotel p{
+        max-width: 400px;
+    }
+}
+@media only screen and (max-width:900px){
+    h2{
+        font-size: 30px;
+    }
+    section{
+        padding: 70px 0 !important;
+    }
+    .logo-img{
+        width: 140px;
+        height: 40px;
+    }
+    .header-list-child a{
+        font-size: 13px;
+    }
+    .travel-list-btn span{
+        font-size: 13px;
+    }
+    .night-mode-btn-first-text,.night-mode-btn-second-text{
+        font-size: 11px;
+    }
+    .night-mode-btn{
+        width: 105px;
+        margin-left: 35px;
+        padding: 7px;
+    }
+    .hero-parent h1{
+        font-size: 42px;
+    }
+    .hero-parent p {
+        font-size: 16px;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+    .hero-parent a{
+        font-size: 14px;
+        padding: 8px 22px;
+    }
+    .top-cta-email-link,.phone-numbers-parent a,.phone-numbers-parent span,.social-networks {
+        font-size: 11px;
+    }
+    .social-networks a{
+        width: 35px;
+        height: 35px;
+    }
+    .social-network-icon{
+        width: 17px;
+        height: 17px;
+    }
+    .visit-section-top-wrapper div p,.travel-list-child-texts-parent p,.about-hotel p,.contact-section-parent p,.photo-gallery-parent p{
+        font-size: 14px;
+        max-width: 520px;
+    }
+}
+@media only screen and (max-width:820px) {
+    .about-section-img:nth-child(2){
+        display: none;
+    }
+}
+@media only screen and (max-width:730px){
+    .header-list-child:not(:last-child){
+        margin-right: 10px;
+    }
+    .travel-list{
+        width: 150px;
+    }
+    .travel-list-child:not(:last-child){
+        margin-bottom: 4px;
+    }
+    .night-mode-btn{
+        margin-left: 10px;
+    }
+    .hero-parent h1{
+        font-size: 31px;
+        margin-bottom: 8px;
+    }
+    .hero-parent p{
+        max-width: 550px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .hero-parent a{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:630px){
+    .header-parent-second-child{
+        display: none;
+    }
+    .hero-parent h1{
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+    .hero-parent p{
+        max-width: 450px;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .hero-parent a{
+        font-size: 11px;
+        padding: 6px 16px;
+        border-width: 0.8px;
+    }
+}
+@media only screen and (max-width:630px){
+    .hero-parent h1{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .hero-parent p{
+        max-width: 390px;
+        font-size: 10px;
+        margin-bottom: 9px;
+    }
+    .hero-parent a{
+        font-size: 9px;
+        border-width: 0.5px;
+        border-radius: 6px;
+    }
+}
