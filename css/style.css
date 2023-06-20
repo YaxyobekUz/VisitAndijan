@@ -53,9 +53,11 @@ p {
     font-size: 18px;
     line-height: 21px;
 }
-section{
+
+section {
     padding: 90px 0;
 }
+
 .body {
     color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
@@ -86,12 +88,15 @@ section{
     margin-right: auto;
     margin-left: auto;
 }
-.left-0{
+
+.left-0 {
     left: 0;
 }
-.right-0{
+
+.right-0 {
     right: 0;
 }
+
 .display-none {
     display: none;
 }
@@ -196,9 +201,11 @@ section{
     z-index: 1;
 }
 
-.lang-list-arrow-icon, .travel-list-arrow-{
-    width: 10px ;
+.lang-list-arrow-icon,
+.travel-list-arrow- {
+    width: 10px;
 }
+
 .lang-list-arrow-icon {
     transform: rotate(180deg);
     color: var(--steel-blue);
@@ -515,26 +522,31 @@ section{
 .about-section {
     padding: 90px 0;
 }
-.about-section-parent{
+
+.about-section-parent {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
+
 .about-section-title {
     list-style: 5px;
 }
-.about-section-parent p{
+
+.about-section-parent p {
     max-width: 800px;
     font-style: italic;
     font-weight: 300;
     margin-bottom: 20px;
 
 }
+
 /* images  */
 .about-section-images-wrapper {
     display: flex;
 }
+
 .about-section-img {
     position: relative;
     width: 360px;
@@ -544,6 +556,7 @@ section{
     background-size: cover;
     background-position: center center;
 }
+
 .about-section-img div {
     position: absolute;
     bottom: 0;
@@ -554,17 +567,20 @@ section{
     text-align: left;
     justify-content: start;
 }
-.about-section-img div h3{
+
+.about-section-img div h3 {
     font-size: 16px;
     font-weight: 500;
 }
+
 .about-section-img div p {
     font-size: 13px;
     font-weight: 300;
     margin-bottom: 4px;
     font-style: normal;
 }
-.about-section-img div a::before{
+
+.about-section-img div a::before {
     content: '';
     width: 7px;
     height: 2px;
@@ -573,28 +589,33 @@ section{
     margin-right: 1px;
     transition: width 0.4s ease;
 }
+
 .about-section-img div a {
     display: flex;
     align-items: center;
     font-size: 12px;
     color: white;
 }
-.about-section-img div a:hover::before{
+
+.about-section-img div a:hover::before {
     width: 12px;
 }
 
 .about-section-img:nth-child(3) div {
     border-radius: 0 0 50px 0;
 }
-.about-section-img:nth-child(1){
+
+.about-section-img:nth-child(1) {
     border-radius: 50px 0 0 0;
     margin-top: 26px;
 }
-.about-section-img:nth-child(3){
+
+.about-section-img:nth-child(3) {
     border-radius: 0 0 50px 0;
     margin-top: 26px;
 }
-.about-section-img:not(:last-child){
+
+.about-section-img:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -607,12 +628,14 @@ section{
     justify-content: space-between;
     margin-bottom: 48px;
 }
-.visit-section-top-wrapper div p{
+
+.visit-section-top-wrapper div p {
     max-width: 600px;
     font-size: 17px;
 }
-.visit-section-top-wrapper a{
-    background:transparent;
+
+.visit-section-top-wrapper a {
+    background: transparent;
     padding: 8px 28px;
     border-radius: 8px;
     color: #2a4f6c;
@@ -625,50 +648,61 @@ section{
     position: relative;
     align-items: center;
 }
-.visit-section-travel-list-child:nth-child(even){
+
+.visit-section-travel-list-child:nth-child(even) {
     justify-content: end;
 }
-.visit-section-travel-list-child:nth-child(odd){
+
+.visit-section-travel-list-child:nth-child(odd) {
     justify-content: start;
 }
-.visit-section-travel-list-child:not(:last-child){
+
+.visit-section-travel-list-child:not(:last-child) {
     margin-bottom: 40px;
 }
-.visit-section-travel-list-child img{
+
+.visit-section-travel-list-child img {
     width: 75%;
     border-radius: 10px;
 }
-.travel-list-child-texts-parent{
+
+.travel-list-child-texts-parent {
     position: absolute;
     width: 700px;
     padding: 50px 40px;
     border-radius: 10px;
     background: #f1f5f8;
 }
-.visit-section-travel-list-child:nth-child(odd) .travel-list-child-texts-parent{
+
+.visit-section-travel-list-child:nth-child(odd) .travel-list-child-texts-parent {
     right: 0;
 }
-.visit-section-travel-list-child:nth-child(even) .travel-list-child-texts-parent{
+
+.visit-section-travel-list-child:nth-child(even) .travel-list-child-texts-parent {
     left: 0;
 }
-.texts-parent-first-text{
+
+.texts-parent-first-text {
     display: block;
     font-size: 14px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
-.travel-list-child-texts-parent h3{
+
+.travel-list-child-texts-parent h3 {
     font-size: 40px;
     line-height: 60px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.travel-list-child-texts-parent p{
+
+.travel-list-child-texts-parent p {
     font-weight: 400;
     font-size: 19px;
     line-height: 26px;
     margin-bottom: 28px;
 }
-.travel-list-child-texts-parent a{
+
+.travel-list-child-texts-parent a {
     display: inline-block;
     background: var(--paley-blue);
     padding: 14px 58px;
