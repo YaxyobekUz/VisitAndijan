@@ -863,7 +863,7 @@ a {
 
 /* price info  */
 .hotel-price-info {
-    font-size: 16px !important;
+    font-size: 19px !important;
     font-weight: 600;
     color: var(--titles-color);
     margin-bottom: 10px !important;
@@ -1050,7 +1050,24 @@ a {
     padding: 10px 0;
     color: var(--midnight-blue-to-white);
 }
-
+@media only screen and (max-width:1230px) {
+    .about-hotel{
+        padding: 0;
+    }
+    .about-hotel h3{
+        font-size: 29px;
+    }
+    .about-hotel p{
+        line-height: normal;
+        font-size: 16px;
+    }
+    .short-text-list{
+        margin-bottom: 10px;
+    }
+    .hotel-visitors-information{
+        margin-bottom: 20px;
+    }
+}
 @media only screen and (max-width:1120px) {
     h2 {
         font-size: 34px;
@@ -1138,7 +1155,13 @@ a {
     .visit-section-top-wrapper p {
         max-width: 500px !important;
     }
-
+    /* hotels section  */
+    .hotel-parent div img{
+        height:370px;
+    }
+    .hotel-parent div img:nth-child(1),.hotel-parent div img:nth-child(3){
+        display: none;
+    }
     .about-hotel p {
         max-width: 400px;
     }
@@ -1211,10 +1234,12 @@ a {
 
     .visit-section-top-wrapper div p,
     .travel-list-child-texts-parent p,
-    .about-hotel p,
     .contact-section-parent p,
     .photo-gallery-parent p {
         max-width: 520px;
+    }
+    .about-hotel h3{
+        font-size: 28px;
     }
 }
 
@@ -1247,6 +1272,41 @@ a {
     .travel-list-child-texts-parent p {
         font-size: 13px;
         margin-bottom: 22px;
+    }
+    /* hotel section  */
+    .hotel-parent {
+        display: flex;
+        gap: 0;
+        position: relative;
+        flex-direction: column-reverse !important;
+        padding: 20px;
+        border-radius: 10px;
+        background: var(--light-steel-blue);
+    }
+    .about-hotel h3{
+        font-size: 26px;
+    }
+    .about-hotel p{
+        max-width: 100%;
+    }
+    .hotel-parent div:nth-child(1),.hotel-parent div:nth-child(1) img{
+        min-width: 100%;
+        height: 100%;
+    }
+    .hotel-price-info{
+        margin-bottom: 20px;
+    }
+    .hotel-link{
+        display: none;
+    }
+    .hotel-second-link{
+        display: inline-block;
+        text-align: center;
+        margin-top: 4px;
+        width: 100%;
+        padding: 12px 0;
+        border-radius: 8px;
+        background: var(--light-steel-blue);
     }
 }
 
