@@ -555,6 +555,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-radius: 10px;
 }
 
 .about-section-img div {
@@ -566,6 +567,7 @@ section {
     color: white;
     text-align: left;
     justify-content: start;
+    border-radius: 0 0  10px 10px;
 }
 
 .about-section-img div h3 {
@@ -602,16 +604,16 @@ section {
 }
 
 .about-section-img:nth-child(3) div {
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 50px 10px;
 }
 
 .about-section-img:nth-child(1) {
-    border-radius: 50px 0 0 0;
+    border-radius: 50px 10px 10px 10px;
     margin-top: 26px;
 }
 
 .about-section-img:nth-child(3) {
-    border-radius: 0 0 50px 0;
+    border-radius: 10px 10px 50px 10px;
     margin-top: 26px;
 }
 
