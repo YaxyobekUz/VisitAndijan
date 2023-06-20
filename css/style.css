@@ -39,7 +39,7 @@ button {
 
 h2 {
     color: #27374D;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 38px;
     margin-bottom: 20px;
 }
@@ -671,7 +671,7 @@ section {
 .travel-list-child-texts-parent {
     position: absolute;
     width: 700px;
-    padding: 50px 40px;
+    padding: 40px 36px;
     border-radius: 10px;
     background: #f1f5f8;
 }
@@ -691,15 +691,17 @@ section {
 }
 
 .travel-list-child-texts-parent h3 {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 60px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #27374D;
 }
 
 .travel-list-child-texts-parent p {
+    max-width: 580px;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 26px;
     margin-bottom: 28px;
 }
