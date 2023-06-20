@@ -531,7 +531,72 @@ section{
     margin-bottom: 20px;
 
 }
+/* images  */
+.about-section-images-wrapper {
+    display: flex;
+}
+.about-section-img {
+    position: relative;
+    width: 360px;
+    height: 500px;
+    background: url(../images/jizzakh-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about-section-img div {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: left;
+    justify-content: start;
+}
+.about-section-img div h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.about-section-img div p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 4px;
+    font-style: normal;
+}
+.about-section-img div a::before{
+    content: '';
+    width: 7px;
+    height: 2px;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 1px;
+    transition: width 0.4s ease;
+}
+.about-section-img div a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+.about-section-img div a:hover::before{
+    width: 12px;
+}
 
+.about-section-img:nth-child(3) div {
+    border-radius: 0 0 50px 0;
+}
+.about-section-img:nth-child(1){
+    border-radius: 50px 0 0 0;
+    margin-top: 26px;
+}
+.about-section-img:nth-child(3){
+    border-radius: 0 0 50px 0;
+    margin-top: 26px;
+}
+.about-section-img:not(:last-child){
+    margin-right: 20px;
+}
 
 /* visit section  */
 
