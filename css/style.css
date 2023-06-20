@@ -1,6 +1,7 @@
 :root {
     --body-color: #fff;
     --midnight-blue: #27374D;
+    --midnight-blue-to-white: #27374D;
     --steel-blue: #526D82;
     --pale-cerulean: #9DB2BF;
     --blue-gray: #bfd2e0;
@@ -8,7 +9,14 @@
     --paley-blue: #d3dee6;
     --white: #fff;
     --header-white-color: #fff;
-
+    /* titles color */
+    --titles-color:#004377;
+    /* link color  */
+    --a-color:#fff;
+    /* top cta  */
+    --top-cta: #f1f5f8;
+    /* background */
+    --background:transparent;
     /* for night mode btn  */
     --display-none: none;
     --display-block: block;
@@ -19,10 +27,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-    color: var(--steel-blue);
+.a-color{
+    --a-color:#526D82;
 }
 
 ul {
@@ -38,7 +44,7 @@ button {
 }
 
 h2 {
-    color: #27374D;
+    color: var(--titles-color);
     font-size: 36px;
     line-height: 38px;
     margin-bottom: 20px;
@@ -63,25 +69,38 @@ section {
 .body {
     color: var(--steel-blue);
     font-family: 'Geologica', 'sans-serif';
-    background: var(--body-color);
+    background-color: var(--body-color);
     scroll-behavior: smooth;
+    transition: background-color 0.3s ease ;
 }
 
 .night-mode {
-    --body-color: var(--light-steel-blue);
+    --body-color:#002847;
     --midnight-blue: #27374D;
+    --midnight-blue-to-white: #fff;
     --steel-blue: #fff;
+    --steel-blue-to-gray: #8d8d8d;
     --pale-cerulean: #9DB2BF;
     --blue-gray: #bfd2e0;
-    --light-steel-blue: #2a4f6c;
+    --light-steel-blue: #0f3858;
     --paley-blue: #526D82;
-    --white: #27374D;
+    --white: #002847;
     --header-white-color: #fff;
+    --a-color:#fff;
+    /* titles color */
+    --titles-color:#0076d1;
+    /* top cta  */
+    --top-cta:#093150 ;
+    /* background */
+    --background:#00243fb9;
     /* for night mode btn  */
     --display-none: block;
     --display-block: none;
 }
-
+a {
+    text-decoration: none;
+    color: var(--a-color);
+}
 .container {
     max-width: 1280px;
     width: 100%;
@@ -108,7 +127,7 @@ section {
 .top-cta {
     width: 100%;
     padding: 18px 0;
-    background: #f1f5f8;
+    background: var(--top-cta);
     font-size: 14px;
 }
 
@@ -235,35 +254,12 @@ section {
 .lang-btn span {
     margin-right: 4px;
 }
-
-@keyframes arrowRotate180deg {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
+.travel-list-arrow-icon{
+    transition: transform 0.2s ease;
+    color: var(--a-color);
 }
-
 .rotate180deg {
     transform: rotate(180deg);
-    animation: arrowRotate180deg 0.2s ease;
-}
-
-@keyframes arrowRotate0deg {
-    0% {
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-.rotate0deg {
-    transform: rotate(0);
-    animation: arrowRotate0deg 0.2s ease;
 }
 
 @keyframes bringDown {
@@ -319,6 +315,7 @@ section {
 .header-list-child a,
 .travel-list-btn span {
     font-size: 15px;
+    color: var(--a-color);
 }
 
 .header-list-child:not(:last-child) {
@@ -336,19 +333,17 @@ section {
     background: var(--white);
     box-shadow: 0 2px 4px 0 #00000037;
 }
-
 @keyframes bringDown2 {
     0% {
         opacity: 0;
         top: 0;
     }
-
+    
     100% {
         opacity: 1;
         top: 28px;
     }
 }
-
 .travel-list-child-bring-down {
     opacity: 1;
     top: 28px;
@@ -441,6 +436,9 @@ section {
 .night-mode-btn-second-text {
     font-size: 14px;
     display: var(--display-none);
+}
+.white-color{
+    color: #fff;
 }
 
 /* hero  */
@@ -570,6 +568,7 @@ section {
     text-align: left;
     justify-content: start;
     border-radius: 0 0  10px 10px;
+    background: var(--background);
 }
 
 .about-section-img div h3 {
@@ -642,8 +641,8 @@ section {
     background: transparent;
     padding: 8px 28px;
     border-radius: 8px;
-    color: #2a4f6c;
-    border: 2px solid #2a4f6c;
+    color: var(--steel-blue);
+    border: 2px solid  var(--steel-blue);
 }
 
 /* list  */
@@ -675,7 +674,7 @@ section {
     width: 700px;
     padding: 40px 36px;
     border-radius: 10px;
-    background: #f1f5f8;
+    background: var(--light-steel-blue);
 }
 
 .visit-section-travel-list-child:nth-child(odd) .travel-list-child-texts-parent {
@@ -697,7 +696,7 @@ section {
     line-height: 60px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #27374D;
+    color: var(--titles-color);
 }
 
 .travel-list-child-texts-parent p {
@@ -713,7 +712,7 @@ section {
     background: var(--paley-blue);
     padding: 14px 58px;
     border-radius: 8px;
-    color: #2a4f6c;
+    color: var(--steel-blue);
 }
 
 /* photo gallery */
@@ -785,8 +784,6 @@ section {
 }
 
 /* hotels section  */
-.hotels-section {
-}
 .hotel-parent {
     display: grid;
     grid-template-columns: auto auto;
@@ -830,7 +827,7 @@ section {
 .about-hotel h3 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #27374D;
+    color: var(--titles-color);
 }
 .about-hotel p {
     line-height: 26px;
@@ -844,7 +841,7 @@ section {
 .hotel-price-info{
     font-size: 16px !important;
     font-weight: 600;
-    color: #2a4f6c;
+    color: var(--titles-color);
     margin-bottom: 10px !important;
 }
 .hotel-price-info span,.hotel-price-info sup del{
@@ -872,18 +869,17 @@ section {
 .hotel-visitors-information div span:nth-child(1){
     font-size: 36px;
     font-weight: 700;
-    color: #27374D;
+    color: var(--titles-color);
 }
 .hotel-visitors-information div span:nth-child(2){
     font-size: 14px;
-    color: #526D82;
+    color: var(--titles-color);
 }
 .hotel-link {
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #2a4f6c;
-    /* max-width: 500px; */
+    color: var(--steel-blue);
 }
 .hotel-link::after{
     content: '';
@@ -904,8 +900,8 @@ section {
 
 /* contact section */
  .contact-section {
+    background: var(--top-cta);
     padding: 50px 0;
-    background: #f1f5f8;
 }
 .contact-section-parent {
     display: flex;
@@ -921,13 +917,13 @@ section {
 }
 .contact-link{
     font-size: 14px;
-    color: #2a4f6c;
+    color: var(--steel-blue);
     margin-bottom: 20px;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 .contact-link:hover{
-    color: #27374D;
+    color: var(--steel-blue);
 }
 .contact-section-links-parent p {
     font-size: 16px;
@@ -943,8 +939,8 @@ section {
     align-items: center;
     border-radius: 8px;
     background: transparent;
-    border: 2px solid #2a4f6c;
-    color: #2a4f6c;
+    border: 1.5px solid  var(--steel-blue);
+    color:  var(--steel-blue);
     font-size: 14px;
     font-weight: 500;
     padding: 8px 30px;
@@ -962,15 +958,10 @@ section {
 .footer {
     padding: 60px 0;
 }
-.container {
-}
 .footer-parent {
     display: flex;
     align-items: start;
     justify-content: space-between;
-}
-.footer-list {
-
 }
 .footer-list-child:not(:last-child) {
     margin-bottom: 8px;
@@ -981,12 +972,13 @@ section {
     margin-bottom: 10px;
 }
 .footer-list-child a{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     transition: color 0.3s ease;
+    color: var(--steel-blue);
 }
 .footer-list-child a:hover,.footer-link:hover{
-    color: #27374D;
+    color: var(--midnight-blue-to-white);
 }
 .footer-last-item {
     display: flex;
@@ -995,10 +987,11 @@ section {
 .footer-link{
     margin-top: 10px;
     transition: color 0.3s ease;
+    color: var(--steel-blue);
 }
 .footer-bottom {
-    border-top: 1px solid #27374D;
+    border-top: 0.5px solid var(--midnight-blue-to-white);
     text-align: center;
-    padding: 20px 0;
-    color: #27374D;
+    padding: 10px 0;
+    color: var(--midnight-blue-to-white);
 }

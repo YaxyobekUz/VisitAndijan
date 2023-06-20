@@ -1,12 +1,4 @@
 // header scroll effect 
-function addClass(element, className) {
-    if (element.classList) {
-      element.classList.add(className);
-    } else {
-      element.className += ' ' + className;
-    }
-  }
-
   function removeClass(element, className) {1
     if (element.classList) {
       element.classList.remove(className);
@@ -21,10 +13,12 @@ function addClass(element, className) {
     window.addEventListener('scroll', function () {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop >= 2) {
-        addClass(header, 'with-effect');
+      if (scrollTop >= 20) {
+        header.classList.add('with-effect');
+        document.body.classList.add('a-color');
       } else {
-        removeClass(header, 'with-effect');
+        header.classList.remove('with-effect');
+        document.body.classList.remove('a-color');
       }
     });
   });
