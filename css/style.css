@@ -1519,10 +1519,12 @@ a {
         padding: 50px 0 !important;
     }
 
-    .header-parent-second-child {
+    .header-list,.night-mode-btn {
         display: none;
     }
-
+    .hamburger-menu-btn{
+        display: flex;
+    }
     .hero-parent h1 {
         font-size: 26px;
         margin-bottom: 6px;
