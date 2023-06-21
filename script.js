@@ -1,29 +1,30 @@
 // header scroll effect 
-  function removeClass(element, className) {1
-    if (element.classList) {
-      element.classList.remove(className);
-    } else {
-      element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-    }
+function removeClass(element, className) {
+  1
+  if (element.classList) {
+    element.classList.remove(className);
+  } else {
+    element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
   }
+}
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header');
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.header');
 
-    window.addEventListener('scroll', function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop >= 20) {
-        header.classList.add('with-effect');
-        document.body.classList.add('a-color');
-      } else {
-        header.classList.remove('with-effect');
-        document.body.classList.remove('a-color');
-      }
-    });
+    if (scrollTop >= 20) {
+      header.classList.add('with-effect');
+      document.body.classList.add('a-color');
+    } else {
+      header.classList.remove('with-effect');
+      document.body.classList.remove('a-color');
+    }
   });
+});
 
-// lang list 
+// lang list coming soon
 // const elLangBtn = document.querySelector('.lang-btn');
 // const elLangListSecondChild = document.querySelector('.lang-list-last-child');
 // const elArrowRotate = document.querySelector('.lang-list-arrow-icon');
@@ -40,10 +41,10 @@ const elTravelList = document.querySelector('.travel-list');
 const elTravelBtnArrowRotate = document.querySelector('.travel-list-arrow-icon');
 
 elTravelListBtn.addEventListener('click', function () {
-    elTravelList.classList.toggle('travel-list-child-bring-down');
-    elTravelList.classList.toggle('display-none');
-    elTravelBtnArrowRotate.classList.toggle('rotate0deg');
-    elTravelBtnArrowRotate.classList.toggle('rotate180deg');
+  elTravelList.classList.toggle('travel-list-child-bring-down');
+  elTravelList.classList.toggle('display-none');
+  elTravelBtnArrowRotate.classList.toggle('rotate0deg');
+  elTravelBtnArrowRotate.classList.toggle('rotate180deg');
 });
 
 // travel list 2 
@@ -52,22 +53,22 @@ const elTravelList2 = document.querySelector('.travel-list-2');
 const elTravelBtnArrowRotate2 = document.querySelector('.travel-list-arrow-icon-2');
 
 elTravelListBtn2.addEventListener('click', function () {
-    elTravelList2.classList.toggle('travel-list-bring-down');
-    elTravelBtnArrowRotate2.classList.toggle('travel-list-child-bring-down-2');
+  elTravelList2.classList.toggle('travel-list-bring-down');
+  elTravelBtnArrowRotate2.classList.toggle('travel-list-child-bring-down-2');
 });
 
 // night and light mode 
 const elNightModeBtn = document.querySelector('.night-mode-btn');
 
 elNightModeBtn.addEventListener('click', function () {
-    document.body.classList.toggle('night-mode');
+  document.body.classList.toggle('night-mode');
 })
 
 // hamburger menu's night and light mode 
 const elNightModeBtn2 = document.querySelector('.night-mode-btn-2');
 
 elNightModeBtn2.addEventListener('click', function () {
-    document.body.classList.toggle('night-mode');
+  document.body.classList.toggle('night-mode');
 })
 
 // hamburger menu 
