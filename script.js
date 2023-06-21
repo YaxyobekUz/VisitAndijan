@@ -46,10 +46,27 @@ elTravelListBtn.addEventListener('click', function () {
     elTravelBtnArrowRotate.classList.toggle('rotate180deg');
 });
 
+// travel list 2 
+const elTravelListBtn2 = document.querySelector('.travel-list-btn-2');
+const elTravelList2 = document.querySelector('.travel-list-2');
+const elTravelBtnArrowRotate2 = document.querySelector('.travel-list-arrow-icon-2');
+
+elTravelListBtn2.addEventListener('click', function () {
+    elTravelList2.classList.toggle('travel-list-bring-down');
+    elTravelBtnArrowRotate2.classList.toggle('travel-list-child-bring-down-2');
+});
+
 // night and light mode 
 const elNightModeBtn = document.querySelector('.night-mode-btn');
 
 elNightModeBtn.addEventListener('click', function () {
+    document.body.classList.toggle('night-mode');
+})
+
+// hamburger menu's night and light mode 
+const elNightModeBtn2 = document.querySelector('.night-mode-btn-2');
+
+elNightModeBtn2.addEventListener('click', function () {
     document.body.classList.toggle('night-mode');
 })
 
@@ -61,4 +78,5 @@ const elMenuBtnAnimation = document.querySelector('.hamburger-menu-btn-child');
 elHamburgerMenuBtn.addEventListener('click', function () {
   elMenuBtnAnimation.classList.toggle('btn-animation');
   elHamburgerMenu.classList.toggle('menu-animation');
+  document.body.classList.toggle('overflow-hidden')
 })

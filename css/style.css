@@ -126,7 +126,12 @@ a {
 .display-none {
     display: none;
 }
-
+.display-block {
+    display: block;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
 
 /* top  */
 .top-cta {
@@ -461,6 +466,7 @@ a {
     height: 40px;
     border-radius: 8px;
     background: var(--paley-blue);
+    z-index: 2;
 }
 
 .hamburger-menu-btn-child {
@@ -513,7 +519,90 @@ a {
     transform-origin: center center;
     transform: rotate(-45deg);
 }
-
+.hamburger-menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--white);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.menu-animation{
+    left: 0;
+    transition: all 0.3s ease;
+}
+.header-list-2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-list-child-2:not(:last-child){
+    margin: 0 0 10px 0;
+}
+.header-list-child-2{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.header-list-child-2 a,.header-list-child-2 button span,.travel-list-arrow-icon{
+    color: var(--steel-blue);
+}
+.header-list-child-2 a,.header-list-child-2 button span{
+    font-size: 16px;
+}
+.night-mode-btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 115px;
+    margin-top: 20px;
+}
+.night-mode-btn-2 span {
+    font-size: 16px;
+}
+.logo-link-2{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.logo-img-2{
+    width: 120px !important;
+    height: 36px;
+}
+.travel-list-btn-2{
+    display: flex;
+    align-items: center;
+}
+.travel-list-2{
+    display: none;
+    height: 0px ;
+    transition: all 0.3s ease;
+}
+.travel-list-btn-2 span{
+    margin-right: 4px;
+}
+.travel-list-2 li {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.travel-list-2 li a{
+    font-size: 14px;
+}
+.travel-list-arrow-icon-2{
+    transform: rotate(180deg);
+}
+.travel-list-bring-down{
+    display: block;
+    height: 122px;
+    margin-top: 8px;
+}
+.travel-list-child-bring-down-2{
+    transform: rotate(0deg);
+}
 /* hero  */
 .hero {
     position: relative;
@@ -1518,8 +1607,10 @@ a {
     section {
         padding: 50px 0 !important;
     }
-
-    .header-list,.night-mode-btn {
+    .with-effect {
+        padding: 20px 0;
+    }
+    .header-parent-second-child{
         display: none;
     }
     .hamburger-menu-btn{
