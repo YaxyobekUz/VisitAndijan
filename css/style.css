@@ -144,8 +144,9 @@ a {
 }
 
 .top-cta-parent {
-    display: flex;
+    display: grid ;
     align-items: center;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
     color: var(--steel-blue);
 }
@@ -1179,7 +1180,8 @@ a {
 }
 
 .footer-parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     align-items: start;
     justify-content: space-between;
 }
@@ -1626,6 +1628,28 @@ a {
     .photos-list {
         gap: 10px;
     }
+    /* footer  */
+    .footer-parent{
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .footer-social-networks{
+        flex-direction: row;
+    }
+
+    .footer-item:nth-child(1){
+        order: 1;
+    }
+    .footer-item:nth-child(2){
+        order:3;
+    }
+    .footer-item:nth-child(3){
+        order:4 ;
+    }
+    .footer-item:nth-child(4){
+        order: 2;
+    }
 }
 
 @media only screen and (max-width:630px) {
@@ -1694,18 +1718,51 @@ a {
 }
 
 @media only screen and (max-width:500px) {
-
-    /* visit section  */
-    .travel-list-child-texts-parent a {
-        padding: 9px 32px;
-        border-radius: 6px;
+    /* top cta  */
+    .top-cta-parent{
+        grid-template-columns: auto auto;
+        gap: 20px;
+        align-items: start;
     }
-
+    .top-cta-email-link{
+        grid-column: 1/3;
+        order: 3;
+        text-align: center;
+    }
+    .social-networks{
+        order: 1;
+    }
+    /* visit section  */
+    .visit-section-top-wrapper a{
+        padding: 5px 18px;
+    }
+    .visit-section-travel-list-child{
+        position: relative;
+        margin-bottom: 80px !important;
+    }
+    .travel-list-child-texts-parent p{
+        margin-bottom: 0;
+    }
+    .travel-list-child-texts-parent a {
+        display: inline-block;
+        padding: 12px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -46px !important;
+        text-align: center;
+    }
+    /* visit section  */
+    .travel-list-child-texts-parent {
+        width: 100%;
+        height: 100%;
+    }
     /* photo gallery  */
     .photos-list {
         grid-template-columns: auto;
         gap: 6px;
     }
+    /* footer  */
 }
 
 @media only screen and (max-width:430px) {
