@@ -71,6 +71,7 @@ elNightModeBtn2.addEventListener('click', function () {
 })
 
 // hamburger menu 
+const elBlur = document.querySelector('.blur');
 const elHamburgerMenuBtn = document.querySelector('.hamburger-menu-btn');
 const elHamburgerMenu = document.querySelector('.hamburger-menu');
 const elMenuBtnAnimation = document.querySelector('.hamburger-menu-btn-child');
