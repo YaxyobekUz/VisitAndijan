@@ -52,3 +52,13 @@ const elNightModeBtn = document.querySelector('.night-mode-btn');
 elNightModeBtn.addEventListener('click', function () {
     document.body.classList.toggle('night-mode');
 })
+
+// hamburger menu 
+const elHamburgerMenuBtn = document.querySelector('.hamburger-menu-btn');
+const elHamburgerMenu = document.querySelector('.hamburger-menu');
+const elMenuBtnAnimation = document.querySelector('.hamburger-menu-btn-child');
+
+elHamburgerMenuBtn.addEventListener('click', function () {
+  elMenuBtnAnimation.classList.toggle('btn-animation');
+  elHamburgerMenu.classList.toggle('menu-animation');
+})
