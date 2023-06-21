@@ -1792,6 +1792,21 @@ a {
         border-width: 0.5px;
         border-radius: 6px;
     }
+    /* visit section  */
+    .visit-section-travel-list-child,.hotel-parent{
+        padding: 15px;
+    }
+    .travel-list-child-texts-parent a{
+        bottom: -42px !important;
+    }
+    .travel-list-child-texts-parent a,.hotel-second-link{
+        padding: 9px;
+        border-radius: 6px;
+    }
+    /* contact secion  */
+    .contact-section-links-parent span a{
+        padding: 7px 20px;
+    }
 }
 @media only screen and (max-width:360px) {
     .footer-parent{
@@ -1805,5 +1820,13 @@ a {
     }
     .footer-social-networks{
         width: 146px;
+    }
+    /* contact secion  */
+    .contact-section-links-parent span {
+        flex-direction: column;
+    }
+    /* contact secion  */
+    .contact-section-links-parent span a:nth-child(1){
+        margin-bottom: 6px;
     }
 }
