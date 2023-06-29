@@ -1103,6 +1103,9 @@ a {
     font-size: 14px;
     color: var(--steel-blue);
 }
+.hotel-second-link {
+    display: none;
+}
 
 .hotel-link::after {
     content: '';
@@ -1505,9 +1508,8 @@ a {
     .hotel-link {
         display: none;
     }
-
     .hotel-second-link {
-        display: inline-block;
+        display:inline-block;
         text-align: center;
         margin-top: 4px;
         width: 100%;
