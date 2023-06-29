@@ -83,3 +83,9 @@ elHamburgerMenuBtn.addEventListener('click', function () {
   document.body.classList.toggle('overflow-hidden');
   elBrightness.classList.toggle('display-none');
 })
+elBrightness.addEventListener('click', function () {
+  elMenuBtnAnimation.classList.toggle('btn-animation');
+  elHamburgerMenu.classList.toggle('menu-animation');
+  document.body.classList.toggle('overflow-hidden');
+  elBrightness.classList.toggle('display-none');
+})
