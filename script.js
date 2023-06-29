@@ -72,13 +72,14 @@ elNightModeBtn2.addEventListener('click', function () {
 })
 
 // hamburger menu 
-const elBlur = document.querySelector('.blur');
 const elHamburgerMenuBtn = document.querySelector('.hamburger-menu-btn');
 const elHamburgerMenu = document.querySelector('.hamburger-menu');
 const elMenuBtnAnimation = document.querySelector('.hamburger-menu-btn-child');
+const elBrightness = document.querySelector('.brightness');
 
 elHamburgerMenuBtn.addEventListener('click', function () {
   elMenuBtnAnimation.classList.toggle('btn-animation');
   elHamburgerMenu.classList.toggle('menu-animation');
-  document.body.classList.toggle('overflow-hidden')
+  document.body.classList.toggle('overflow-hidden');
+  elBrightness.classList.toggle('display-none');
 })
